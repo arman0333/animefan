@@ -1,0 +1,33 @@
+name: perceptive
+adopt-info: perceptive
+summary: perceptive from terminal
+description: |
+  Thought providing statements from Greatest thinkers of All Time
+
+base: core22
+grade: stable
+confinement: strict
+
+license: MIT
+
+apps: 
+  perceptive:
+    command: perceptive
+    environment: 
+      LC_ALL: C.UTF-8
+
+parts:
+  perceptive:
+    source: https://github.com/arman0333/Perceptive
+    source-type: git
+    plugin: python
+    python-version: python3
+
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+
+    build-packages:
+      - python3
+    stage-packages:
+      - python3
