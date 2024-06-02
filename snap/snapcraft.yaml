@@ -21,7 +21,8 @@ parts:
     source: https://github.com/arman0333/anime-cli
     source-type: git
     plugin: python
-    python-version: python3
+     stage-packages:
+      - python3-usb
 
     override-pull: |
       snapcraftctl pull
