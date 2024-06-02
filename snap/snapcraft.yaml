@@ -1,8 +1,8 @@
-name: perceptive
+name: anime
 adopt-info: perceptive
-summary: perceptive from terminal
+summary: Anime scenes from terminal
 description: |
-  Thought providing statements from Greatest thinkers of All Time
+  Anime scenes from terminal
 
 base: core22
 grade: stable
@@ -11,14 +11,14 @@ confinement: strict
 license: MIT
 
 apps: 
-  perceptive:
-    command: perceptive
+  anime:
+    command: anime
     environment: 
       LC_ALL: C.UTF-8
 
 parts:
-  perceptive:
-    source: https://github.com/arman0333/Perceptive
+  anime:
+    source: https://github.com/arman0333/anime-cli
     source-type: git
     plugin: python
     python-version: python3
