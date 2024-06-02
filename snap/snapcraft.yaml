@@ -10,10 +10,10 @@ confinement: strict
 
 license: MIT
 
-apps: 
+apps:
   anime:
     command: anime
-    environment: 
+    environment:
       LC_ALL: C.UTF-8
 
 parts:
@@ -22,7 +22,7 @@ parts:
     source-type: git
     plugin: python
     build-packages:
-      - python3
+      - python3  # Assuming your app uses Python 3
     stage-packages:
       - python3
       - python3-usb
