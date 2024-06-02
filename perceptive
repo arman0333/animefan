@@ -1,4 +1,0 @@
-
-import libperceptive
-
-libperceptive.main()
