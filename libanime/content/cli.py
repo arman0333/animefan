@@ -1,9 +1,5 @@
-import click
-
-@click.command()
 def main():
-    click.echo("Glimpse of Anime through the terminal")
+    print("Welcome to the Anime CLI!")
 
 if __name__ == "__main__":
     main()
-
