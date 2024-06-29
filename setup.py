@@ -1,21 +1,24 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='anime-cli',
-    version='1.0.0',
+    name='animefan',
+    version='1.1.2',
     description='A CLI tool for anime quotes and ASCII art',
     author='Arman Sethi',
     author_email='armansethi64@gmail.com',
-    url='https://github.com/yourusername/anime-cli',
-    packages=find_packages(),
+    url='https://github.com/arman0333/anime-cli',
+    packages=find_packages(include=['animefan', 'animefan.*']),  
     include_package_data=True,
     install_requires=[
-        'requests',    
+        'requests',
         'pyfiglet',
     ],
-    entry_points={
+     entry_points={
         'console_scripts': [
-        'anime-cli=libanime:_init_.py'
+            'anime-fan=animefan:hello',
         ],
+    },
+     package_data={
+        "animefan": ["content/*", "ascii-images/*"],  
     },
 )
