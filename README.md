@@ -23,7 +23,7 @@ You can install Animefan using `pip`:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/animefan.git
+    git clone https://github.com/arman0333/animefan.git
     cd animefan
     ```
 
@@ -38,7 +38,7 @@ You can install Animefan using `pip`:
 1. Download or clone the repository:
 
     ```bash
-    git clone https://github.com/armansethi/animefan.git
+    git clone https://github.com/arman0333/animefan.git
     cd animefan
     ```
 
