@@ -40,6 +40,7 @@ You can install Animefan using `pip`:
     ```bash
     git clone https://github.com/arman0333/animefan.git
     cd animefan
+    python __init__.py
     ```
 
 2. Install the required dependencies:
@@ -57,4 +58,4 @@ After installing the package, you can use the `animefan` command to display a ra
 Simply open your terminal and type:
 
 ```bash
-animefan
+anime-fan
