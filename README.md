@@ -2,6 +2,12 @@
 
 Animefan is a command-line interface (CLI) tool designed for anime enthusiasts. It displays random anime quotes along with ASCII art to brighten your terminal experience. The tool fetches quotes from a predefined file and displays them in a speech bubble, accompanied by randomly selected ASCII art from a specified directory.
 
+## Resources Used
+- [Anime Quotes](https://github.com/AnimeQuotesAPI/AnimeQuotesAPI)
+-ASCII ART Converter
+```
+https://github.com/TheZoraiz/ascii-image-converter
+```
 ## Features
 
 - Display random anime quotes from a text file.
