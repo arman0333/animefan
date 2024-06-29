@@ -1,8 +1,11 @@
 from setuptools import setup, find_packages
 
+with open("README.md","r") as f:
+    description = f.read()
+
 setup(
     name='animefan',
-    version='1.1.2',
+    version='1.1.3',
     description='A CLI tool for anime quotes and ASCII art',
     author='Arman Sethi',
     author_email='armansethi64@gmail.com',
@@ -21,4 +24,7 @@ setup(
      package_data={
         "animefan": ["content/*", "ascii-images/*"],  
     },
+
+    long_description=description,
+    long_description_content_type="text/markdown",
 )
